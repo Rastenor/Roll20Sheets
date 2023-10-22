@@ -1,0 +1,48 @@
+.fate-block{
+    grid-area: "fate";
+}
+.title-block{
+    grid-area: "title";
+}
+.concept-block{
+    grid-area: "concept";
+}
+.primary-attributes-block{
+    grid-area: "prim";
+}
+.name-block{
+    grid-area: "name";
+}
+.ancestry-block{
+    grid-area: "ancestry";
+}
+.boons-banes-block{
+    grid-area: "boons";
+}
+.alignment-block{
+    grid-area: "align";
+}
+.skills-block{
+    grid-area: "skills";
+}
+.difficulty-block{
+    grid-area: "diff";
+}
+.languages-block{
+    grid-area: "lang";
+}
+
+.grid{
+    margin: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    grid-template-areas: 
+    "fate title concept"
+    "prim name skills"
+    "prim ancestry skills"
+    "prim boons skills"
+    "prim align skills"
+    "lang align skills"
+    "diff diff diff";
+}
