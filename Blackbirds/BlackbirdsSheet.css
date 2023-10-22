@@ -1,39 +1,31 @@
-.fate-block{
-    grid-area: "fate";
+.fate-coin-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
-.title-block{
-    grid-area: "title";
+
+.fate-spent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
-.concept-block{
-    grid-area: "concept";
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: grey;
 }
-.primary-attributes-block{
-    grid-area: "prim";
-}
-.name-block{
-    grid-area: "name";
-}
-.ancestry-block{
-    grid-area: "ancestry";
-}
-.boons-banes-block{
-    grid-area: "boons";
-}
-.alignment-block{
-    grid-area: "align";
-}
-.skills-block{
-    grid-area: "skills";
-}
-.difficulty-block{
-    grid-area: "diff";
-}
-.languages-block{
-    grid-area: "lang";
+
+.border{
+    border: 1px solid darkslategray;
+    min-height: 50px;
 }
 
 .grid{
-    margin: 5rem;
+    margin: 3rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
@@ -45,4 +37,42 @@
     "prim align skills"
     "lang align skills"
     "diff diff diff";
+}
+
+
+
+
+.fate-block{
+    grid-area: fate;
+}
+.title-block{
+    grid-area: title;
+    text-align: center;
+}
+.concept-block{
+    grid-area: concept;
+}
+.primary-attributes-block{
+    grid-area: prim;
+}
+.name-block{
+    grid-area: name;
+}
+.ancestry-block{
+    grid-area: ancestry;
+}
+.boons-banes-block{
+    grid-area: boons;
+}
+.alignment-block{
+    grid-area: align;
+}
+.skills-block{
+    grid-area: skills;
+}
+.difficulty-block{
+    grid-area: diff;
+}
+.languages-block{
+    grid-area: lang;
 }
