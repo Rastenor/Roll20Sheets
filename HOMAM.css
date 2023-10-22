@@ -1,0 +1,90 @@
+.charsheet .stat
+{
+    text-align-last: end;
+}
+
+.charsheet .player{
+    grid-row:1;
+    grid-column: 1 / span 2;
+
+}
+.charsheet .name{
+    grid-row: 1;
+    grid-column: 3/span 2;
+}
+.charsheet .pronouns{
+    grid-row: 1;
+    grid-column: 5/ span 2;
+}
+.charsheet .heart{
+    grid-row: 2;
+    grid-column: 3;
+    text-align: center;
+}
+.charsheet .heat{
+    grid-row:2;
+    grid-column: 4;
+    text-align: center;
+}
+.charsheet .hands{
+    grid-row: 3;
+    grid-column: 2;
+}
+.charsheet .thighs{
+    grid-row: 3;
+    grid-column: 3;
+}
+.charsheet .lips{
+    grid-row: 3;
+    grid-column: 4;
+}
+.charsheet .breast{
+    grid-row: 3;
+    grid-column: 5;
+}
+.charsheet .itsbig{
+    grid-row: 4;
+    grid-column: 1 / span 2;
+}
+.charsheet .personality
+{
+    grid-row: 4;
+    grid-column: 3 / span 2;
+}
+.charsheet .physique{
+    grid-row: 4;
+    grid-column: 5 / span 2;
+}
+.charsheet .skills{
+    grid-row: 5;
+    grid-column: 1 / span 2;
+}
+.charsheet .gear{
+    grid-row: 5;
+    grid-column: 3 / span 2;
+}
+.charsheet .specab{
+    grid-row: 5;
+    grid-column: 5 / span 2;
+}
+.charsheet .coin{
+    grid-row: 2;
+    grid-column: 1 / span 2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.charsheet .scars{
+    grid-row:6;
+    grid-column: 1/ span 2;
+}
+.charsheet .notes{
+    grid-row: 6;
+    grid-column: 3/ span 4;
+}
+
+.charsheet .griderino{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 5px;
+  }

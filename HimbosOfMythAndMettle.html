@@ -1,0 +1,75 @@
+<div class="wrapper">
+    <div class="griderino">
+        <span class="player">Player: <input type="text" name="attr_player_name"></span>
+        <span class="name">Name: <input type="text" name="attr_character_name"></span>
+        <span class="pronouns">Pronouns: <input type="text" name="attr_pronouns"></span>
+        <span class="coin">Coin: <br><input type="number" name="attr_coin"></span>
+        <span class="heart"><h1>Heart: </h1><input type="number" name="attr_heart"></span>
+        <span class="heat"><h1>Heat: </h1><input type="number" name="attr_heat"></span>
+        <span class="hands stat">
+            <span><h2>Hands: <input type="number" name="attr_hands" min="1" max="20"></h2></span><br>
+            <span>WoE: <input type="number" name="attr_handswoe" id="" value="" readonly> </span>
+        </span>
+        <span class="thighs stat">
+            <span><h2>Thighs: </h2><input type="number" name="attr_thighs" min="1" max="20"></span><br>
+            <span>WoE: <input type="number" name="attr_thighswoe" id="" value="" readonly> </span>
+        </span>
+        <span class="lips stat">
+            <span><h2>Lips: </h2><input type="number" name="attr_lips" min="1" max="20"></span><br>
+            <span>WoE: <input type="number" name="attr_lipswoe" id="" value="" readonly> </span>
+        </span>
+        <span class="breast stat">
+            <span><h2>Breast: </h2><input type="number" name="attr_breast" min="1" max="20"></span><br>
+            <span>WoE: <input type="number" name="attr_breastwoe" id="" value="" readonly> </span>
+        </span>
+        <span class="itsbig">It's Big!: <br><input type="text" name="attr_itsbig" id=""></span>
+        <span class="personality">Personality: <br><input type="text" name="attr_personality"></span>
+        <span class="physique">Physique: <br><input type="text" name="attr_physique"></span>
+        <span class="skills">Skills: <br><fieldset class="repeating_skills"><input type="text" name="attr_skillname" value=""></fieldset></span>
+        <span class="gear">Gear: <br><fieldset class="repeating_gear"><input type="text" name="attr_gearname"> Ex: <input type="checkbox" name="Extraordinary?" id=""></fieldset></span>
+        <span class="specab">Special abilities: <br><fieldset class="repeating_specab"><input type="text" name="attr_specabname"></fieldset></span>
+        <span class="scars">Scars: <br><fieldset class="repeating_scars"><input type="text" name="attr_scarname"></fieldset></span>
+        <span class="notes">Notes: <br><textarea name="" id="" cols="30" rows="10"></textarea></span>        
+    </div> 
+</div>
+<script type="text/worker">
+    on("change:hands sheet:opened", function() {  
+      getAttrs(["hands"], function(values) {
+        let hands = parseInt(values.hands)||0;
+        let woe = Math.floor(((hands-1)/4)+1);
+        setAttrs({                            
+          "handswoe": woe
+        });
+      });
+    });
+
+    on("change:lips sheet:opened", function() {  
+        getAttrs(["lips"], function(values) {
+          let lips = parseInt(values.lips)||0;
+          let woe = Math.floor(((lips-1)/4)+1);
+          setAttrs({                            
+            "lipswoe": woe
+          });
+        });
+      });
+
+      on("change:thighs sheet:opened", function() {  
+        getAttrs(["thighs"], function(values) {
+          let thighs = parseInt(values.thighs)||0;
+          let woe = Math.floor(((thighs-1)/4)+1);
+          setAttrs({                            
+            "thighswoe": woe
+          });
+        });
+      });
+
+      on("change:breast sheet:opened", function() {  
+        getAttrs(["breast"], function(values) {
+          let breast = parseInt(values.breast)||0;
+          let woe = Math.floor(((breast-1)/4)+1);
+          setAttrs({                            
+            "breastwoe": woe
+          });
+        });
+      });
+</script>
