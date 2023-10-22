@@ -1,36 +1,57 @@
 <div class="wrapper">
-    <div class="griderino">
-        <span class="player">Player: <input type="text" name="attr_player_name"></span>
-        <span class="name">Name: <input type="text" name="attr_character_name"></span>
-        <span class="pronouns">Pronouns: <input type="text" name="attr_pronouns"></span>
-        <span class="coin">Coin: <br><input type="number" name="attr_coin"></span>
-        <span class="heart"><h1>Heart: </h1><input type="number" name="attr_heart"></span>
-        <span class="heat"><h1>Heat: </h1><input type="number" name="attr_heat"></span>
-        <span class="hands stat">
-            <span><h2>Hands:<input type="number" name="attr_hands" min="1" max="20"></h2></span>
-            <span>WoE: <input type="number" name="attr_handswoe" id="" value="" readonly> </span>
-        </span>
-        <span class="thighs stat">
-            <span><h2>Thighs:<input type="number" name="attr_thighs" min="1" max="20"></h2></span>
-            <span>WoE: <input type="number" name="attr_thighswoe" id="" value="" readonly> </span>
-        </span>
-        <span class="lips stat">
-            <span><h2>Lips:<input type="number" name="attr_lips" min="1" max="20"></h2></span>
-            <span>WoE: <input type="number" name="attr_lipswoe" id="" value="" readonly> </span>
-        </span>
-        <span class="breast stat">
-            <span><h2>Breast:<input type="number" name="attr_breast" min="1" max="20"></h2></span>
-            <span>WoE: <input type="number" name="attr_breastwoe" id="" value="" readonly> </span>
-        </span>
-        <span class="itsbig">It's Big!: <br><input type="text" name="attr_itsbig" id=""></span>
-        <span class="personality">Personality: <br><input type="text" name="attr_personality"></span>
-        <span class="physique">Physique: <br><input type="text" name="attr_physique"></span>
-        <span class="skills">Skills: <br><fieldset class="repeating_skills"><input type="text" name="attr_skillname" value=""></fieldset></span>
-        <span class="gear">Gear: <br><fieldset class="repeating_gear"><input type="text" name="attr_gearname"> Ex: <input type="checkbox" name="Extraordinary?" id=""></fieldset></span>
-        <span class="specab">Special abilities: <br><fieldset class="repeating_specab"><input type="text" name="attr_specabname"></fieldset></span>
-        <span class="scars">Scars: <br><fieldset class="repeating_scars"><input type="text" name="attr_scarname"></fieldset></span>
-        <span class="notes">Notes: <br><textarea name="" id="" cols="30" rows="10"></textarea></span>        
-    </div> 
+  <div class="griderino">
+    <span class="player">Player: <input type="text" name="attr_player_name"></span>
+    <span class="name">Name: <input type="text" name="attr_character_name"></span>
+    <span class="pronouns">Pronouns: <input type="text" name="attr_pronouns"></span>
+    <span class="coin">Coin: <br><input type="number" name="attr_coin"></span>
+    <span class="heart">
+      <h1>Heart: </h1><input type="number" name="attr_heart">
+    </span>
+    <span class="heat">
+      <h1>Heat: </h1><input type="number" name="attr_heat">
+    </span>
+    <span class="hands stat">
+      <span>
+        <h2>Hands:<input type="number" name="attr_hands" min="1" max="20"></h2>
+      </span>
+      <span>WoE: <input type="number" name="attr_handswoe" id="" value="" readonly> </span>
+    </span>
+    <span class="thighs stat">
+      <span>
+        <h2>Thighs:<input type="number" name="attr_thighs" min="1" max="20"></h2>
+      </span>
+      <span>WoE: <input type="number" name="attr_thighswoe" id="" value="" readonly> </span>
+    </span>
+    <span class="lips stat">
+      <span>
+        <h2>Lips:<input type="number" name="attr_lips" min="1" max="20"></h2>
+      </span>
+      <span>WoE: <input type="number" name="attr_lipswoe" id="" value="" readonly> </span>
+    </span>
+    <span class="breast stat">
+      <span>
+        <h2>Breast:<input type="number" name="attr_breast" min="1" max="20"></h2>
+      </span>
+      <span>WoE: <input type="number" name="attr_breastwoe" id="" value="" readonly> </span>
+    </span>
+    <span class="itsbig">It's Big!: <br><input type="text" name="attr_itsbig" id=""></span>
+    <span class="personality">Personality: <br><input type="text" name="attr_personality"></span>
+    <span class="physique">Physique: <br><input type="text" name="attr_physique"></span>
+    <span class="skills">Skills: <br>
+      <fieldset class="repeating_skills"><input type="text" name="attr_skillname" value=""></fieldset>
+    </span>
+    <span class="gear">Gear: <br>
+      <fieldset class="repeating_gear"><input type="text" name="attr_gearname"> Ex: <input type="checkbox"
+          name="Extraordinary?" id=""></fieldset>
+    </span>
+    <span class="specab">Special abilities: <br>
+      <fieldset class="repeating_specab"><input type="text" name="attr_specabname"></fieldset>
+    </span>
+    <span class="scars">Scars: <br>
+      <fieldset class="repeating_scars"><input type="text" name="attr_scarname"></fieldset>
+    </span>
+    <span class="notes">Notes: <br><textarea name="" id="" cols="30" rows="10"></textarea></span>
+  </div>
 </div>
 <script type="text/worker">
     on("change:hands sheet:opened", function() {  
