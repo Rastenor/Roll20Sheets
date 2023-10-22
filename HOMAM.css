@@ -1,6 +1,8 @@
 .charsheet .stat
 {
     text-align-last: end;
+    display: flex;
+    flex-direction: column;
 }
 
 .charsheet .player{
