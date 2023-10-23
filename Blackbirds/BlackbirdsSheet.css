@@ -40,68 +40,35 @@
     "diff diff diff";
 }
 
-.skill1{
-    grid-area: skill1;
+.skill-group-ability{
+    display: flex;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    justify-content: center;
+    align-items: center;
+    padding:1rem;
+    margin-left: 0;
+    padding-left: 0;
 }
-.skill2{
-    grid-area: skill2;
-}
-.skill3{
-    grid-area: skill3;
-}
-.s100{
-    grid-area: s100;
-}
-.s110{
-    grid-area: s110;
-}
-.s120{
-    grid-area: s120;
-}
-.s130{
-    grid-area: s130;
-}
-.s200{
-    grid-area: s200;
-}
-.s210{
-    grid-area: s210;
-}
-.s220{
-    grid-area: s220;
-}
-.s230{
-    grid-area: s230;
-}
-.s300{
-    grid-area: s300;
-}
-.s310{
-    grid-area: s310;
-}
-.s320{
-    grid-area: s320;
-}
-.s330{
-    grid-area: s330;
-}
+
 
 .skill-grid{
     display: grid;
-    grid-template-columns: 3fr 1fr 1fr 1fr;
-    gap: 1rem;
-    grid-template-areas:
-    "skill1 s110 s120 s130"
-    "skill2 s210 s220 s230"
-    "skill3 s310 s320 s330";
+    grid-template-columns: 8fr 1fr 1fr 1fr 1fr;
 }
 
 .skill-group{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-direction:row;
     border: 1px solid darkslategray;
+    padding: 1rem;
+}
+.skill-unlock{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .fate-block{
