@@ -40,6 +40,15 @@
     "diff diff diff";
 }
 
+.skill-sub-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:darkslategray;
+    color:white;
+}
+
 .skill-group-ability{
     display: flex;
     writing-mode: vertical-rl;
@@ -103,6 +112,13 @@
 }
 .alignment-block{
     grid-area: align;
+}
+
+.align-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .ha1{
@@ -197,6 +213,9 @@
     "ha8 . . . di8"
     "ha9 r9 r9 r9 di9"
     "ha10 r10 r10 r10 di10";
+    gap: 1rem;
+    padding: 2rem;
+    justify-items: center;
 }
 
 .skills-block{
