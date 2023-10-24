@@ -48,20 +48,28 @@
     align-items: center;
     padding:1rem;
     margin-left: 0;
-    padding-left: 0;
 }
 
 
 .skill-grid{
     display: grid;
-    grid-template-columns: 8fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 7fr 1fr 1fr 1fr 1fr;
+    border-right: 1px solid darkslategray;
+    padding-right: 1rem;
+    column-gap: 1px;
 }
 
 .skill-group{
     display: flex;
     flex-direction:row;
     border: 1px solid darkslategray;
-    padding: 1rem;
+    padding: 1rem 0rem 1rem 0rem;
+}
+.hide-radio {
+    opacity: 5%;
+}
+.hide-radio:hover{
+    opacity: 100%;
 }
 .skill-unlock{
     display: flex;
@@ -96,6 +104,101 @@
 .alignment-block{
     grid-area: align;
 }
+
+.ha1{
+    grid-area: ha1;
+}
+.ha2{
+    grid-area: ha2;
+}
+.ha3{
+    grid-area: ha3;
+}
+.ha4{
+    grid-area: ha4;
+}
+.ha5{
+    grid-area: ha5;
+}
+.ha6{
+    grid-area: ha6;
+}
+.ha7{
+    grid-area: ha7;
+}
+.ha8{
+    grid-area: ha8;
+}
+.ha9{
+    grid-area: ha9;
+}
+.ha10{
+    grid-area: ha10;
+}
+.ha0{
+    grid-area: ha0;
+}
+.di1{
+    grid-area: di1;
+}
+.di2{
+    grid-area: di2;
+}
+.di3{
+    grid-area: di3;
+}
+.di4{
+    grid-area: di4;
+}
+.di5{
+    grid-area: di5;
+}
+.di6{
+    grid-area: di6;
+}
+.di7{
+    grid-area: di7;
+}
+.di8{
+    grid-area: di8;
+}
+.di9{
+    grid-area: di9;
+}
+.di10{
+    grid-area: di10;
+}
+.revelation3{
+    grid-area: r3;
+}
+.revelation5{
+    grid-area: r5;
+}
+.revelation7{
+    grid-area: r7;
+}
+.revelation9{
+    grid-area: r9;
+}
+.revelation10{
+    grid-area: r10;
+}
+
+.alignment-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "ha2 ha1 ha0 di1 di2"
+    "ha3 r3 r3 r3 di3"
+    "ha4 . . . di4"
+    "ha5 r5 r5 r5 di5"
+    "ha6 . . . di6"
+    "ha7 r7 r7 r7 di7"
+    "ha8 . . . di8"
+    "ha9 r9 r9 r9 di9"
+    "ha10 r10 r10 r10 di10";
+}
+
 .skills-block{
     grid-area: skills;
 }
