@@ -1,16 +1,17 @@
 <div class="wrapper">
     <div class="grid">
         <div class="fate-block border">
-            <div class="header"><span style="margin-left: 0; margin-right: auto;">Accessible?<input type="checkbox" name="attr_fateacc" id=""></span>Fate</div>
+            <div class="header"><span style="margin-left: 0; margin-right: auto;">Accessible?<input type="checkbox"
+                        name="attr_fateacc" id=""></span><span>Fate</span></div>
             <div class="fate-coin-block">
-                <div class="fate-spent border">
-                    <input type="radio" name="attr_fatespent" id="0">
+                <label class="fate-spent border">
+                    <input type="radio" name="attr_fatespent" value="spendable" id="0">
                     Spendable
-                </div>
-                <div class="fate-spent border">
-                    <input type="radio" name="attr_fatespent" id="1">
+                </label>
+                <label class="fate-spent border">
+                    <input type="radio" name="attr_fatespent" value="spent" id="1">
                     Spent
-                </div>
+                </label>
             </div>
         </div>
         <div class="title-block">
@@ -28,15 +29,15 @@
             <div class="skill-group">
                 <div class="skill-group-ability">Combat</div>
                 <div class="skill-grid">
-                    <span class="skill">Melee*</span><input class="hide-radio" type="radio" name="attr_melee"  checked><input
-                        type="radio" name="attr_melee" value="10"><input type="radio" name="attr_melee"
+                    <span class="skill">Melee*</span><input class="hide-radio" type="radio" name="attr_melee" value="0"
+                        checked><input type="radio" name="attr_melee" value="10"><input type="radio" name="attr_melee"
                         value="20"><input type="radio" name="attr_melee" value="30">
-                    <span class="skill">Ranged</span><input class="hide-radio" type="radio" name="attr_ranged"  checked><input
-                        type="radio" name="attr_ranged" value="10"><input type="radio" name="attr_ranged"
+                    <span class="skill">Ranged</span><input class="hide-radio" type="radio" name="attr_ranged" value="0"
+                        checked><input type="radio" name="attr_ranged" value="10"><input type="radio" name="attr_ranged"
                         value="20"><input type="radio" name="attr_ranged" value="30">
-                    <span class="skill">Warfare</span><input class="hide-radio" type="radio" name="attr_warfare"  checked><input
-                        type="radio" name="attr_warfare" value="10"><input type="radio" name="attr_warfare"
-                        value="20"><input type="radio" name="attr_warfare" value="30">
+                    <span class="skill">Warfare</span><input class="hide-radio" type="radio" name="attr_warfare"
+                        value="0" checked><input type="radio" name="attr_warfare" value="10"><input type="radio"
+                        name="attr_warfare" value="20"><input type="radio" name="attr_warfare" value="30">
                 </div>
                 <div class="skill-unlock">
                     <input type="checkbox" name="attr_melee_unlock" id="">
@@ -47,15 +48,15 @@
             <div class="skill-group">
                 <div class="skill-group-ability">Brawn</div>
                 <div class="skill-grid">
-                    <span class="skill">Athletics*</span><input class="hide-radio" type="radio" name="attr_athletics" id="" 
-                        checked><input type="radio" name="attr_athletics" value="10"><input type="radio"
+                    <span class="skill">Athletics*</span><input class="hide-radio" type="radio" name="attr_athletics"
+                        id="" value="0" checked><input type="radio" name="attr_athletics" value="10"><input type="radio"
                         name="attr_athletics" value="20"><input type="radio" name="attr_athletics" value="30">
-                    <span class="skill">Intimidate</span><input class="hide-radio" type="radio" name="attr_intimidate" 
-                        checked><input type="radio" name="attr_intimidate" value="10"><input type="radio"
+                    <span class="skill">Intimidate</span><input class="hide-radio" type="radio" name="attr_intimidate"
+                        value="0" checked><input type="radio" name="attr_intimidate" value="10"><input type="radio"
                         name="attr_intimidate" value="20"><input type="radio" name="attr_intimidate" value="30">
-                    <span class="skill">Toughness</span><input class="hide-radio" type="radio" name="attr_toughness"  checked><input
-                        type="radio" name="attr_toughness" value="10"><input type="radio" name="attr_toughness"
-                        value="20"><input type="radio" name="attr_toughness" value="30">
+                    <span class="skill">Toughness</span><input class="hide-radio" type="radio" name="attr_toughness"
+                        value="0" checked><input type="radio" name="attr_toughness" value="10"><input type="radio"
+                        name="attr_toughness" value="20"><input type="radio" name="attr_toughness" value="30">
                 </div>
                 <div class="skill-unlock">
                     <input type="checkbox" name="attr_athletics_unlock" value="Unlocked">
@@ -66,18 +67,21 @@
             <div class="skill-group">
                 <div class="skill-group-ability">Agility</div>
                 <div class="skill-grid">
-                    <span class="skill">Coordination</span> <input class="hide-radio" type="radio" name="attr_coordination" 
-                        checked><input type="radio" name="attr_coordination" value="10"><input type="radio"
-                        name="attr_coordination" value="20"><input  type="radio" name="attr_coordination" value="30">
-                    <span class="skill">Handle Vehicle</span> <input class="hide-radio" type="radio" name="attr_handlevehicle" 
-                        checked><input type="radio" name="attr_handlevehicle" value="10"><input type="radio"
-                        name="attr_handlevehicle" value="20"><input type="radio" name="attr_handlevehicle" value="30">
-                    <span class="skill">Skullduggery</span> <input class="hide-radio" type="radio" name="attr_skullduggery" 
-                        checked><input type="radio" name="attr_skullduggery" value="10"><input type="radio"
-                        name="attr_skullduggery" value="20"><input type="radio" name="attr_skullduggery" value="30">
-                    <span class="skill">Stealth</span> <input class="hide-radio" type="radio" name="attr_stealth"  checked><input
-                        type="radio" name="attr_stealth" value="10"><input type="radio" name="attr_stealth"
-                        value="20"><input type="radio" name="attr_stealth" value="30">
+                    <span class="skill">Coordination</span> <input class="hide-radio" type="radio"
+                        name="attr_coordination" value="0" checked><input type="radio" name="attr_coordination"
+                        value="10"><input type="radio" name="attr_coordination" value="20"><input type="radio"
+                        name="attr_coordination" value="30">
+                    <span class="skill">Handle Vehicle</span> <input class="hide-radio" type="radio"
+                        name="attr_handlevehicle" value="0" checked><input type="radio" name="attr_handlevehicle"
+                        value="10"><input type="radio" name="attr_handlevehicle" value="20"><input type="radio"
+                        name="attr_handlevehicle" value="30">
+                    <span class="skill">Skullduggery</span> <input class="hide-radio" type="radio"
+                        name="attr_skullduggery" value="0" checked><input type="radio" name="attr_skullduggery"
+                        value="10"><input type="radio" name="attr_skullduggery" value="20"><input type="radio"
+                        name="attr_skullduggery" value="30">
+                    <span class="skill">Stealth</span> <input class="hide-radio" type="radio" name="attr_stealth"
+                        value="0" checked><input type="radio" name="attr_stealth" value="10"><input type="radio"
+                        name="attr_stealth" value="20"><input type="radio" name="attr_stealth" value="30">
                 </div>
                 <div class="skill-unlock">
                     <input type="checkbox" name="attr_coordination_unlock">
@@ -89,18 +93,18 @@
             <div class="skill-group">
                 <div class="skill-group-ability">Perception</div>
                 <div class="skill-grid">
-                    <span class="skill">Awareness</span> <input class="hide-radio" type="radio" name="attr_awareness"  checked><input
-                        type="radio" name="attr_awareness" value="10"><input type="radio" name="attr_awareness"
-                        value="20"><input type="radio" name="attr_awareness" value="30">
-                    <span class="skill">Eavesdrop</span> <input class="hide-radio" type="radio" name="attr_eavesdrop"  checked><input
-                        type="radio" name="attr_eavesdrop" value="10"><input type="radio" name="attr_eavesdrop"
-                        value="20"><input type="radio" name="attr_eavesdrop" value="30">
-                    <span class="skill">Scrutinize</span> <input class="hide-radio" type="radio" name="attr_scrutinize" 
+                    <span class="skill">Awareness</span> <input class="hide-radio" type="radio" name="attr_awareness" value="0"
+                        checked><input type="radio" name="attr_awareness" value="10"><input type="radio"
+                        name="attr_awareness" value="20"><input type="radio" name="attr_awareness" value="30">
+                    <span class="skill">Eavesdrop</span> <input class="hide-radio" type="radio" name="attr_eavesdrop" value="0"
+                        checked><input type="radio" name="attr_eavesdrop" value="10"><input type="radio"
+                        name="attr_eavesdrop" value="20"><input type="radio" name="attr_eavesdrop" value="30">
+                    <span class="skill">Scrutinize</span> <input class="hide-radio" type="radio" name="attr_scrutinize" value="0"
                         checked><input type="radio" name="attr_scrutinize" value="10"><input type="radio"
                         name="attr_scrutinize" value="20"><input type="radio" name="attr_scrutinize" value="30">
-                    <span class="skill">Survival</span> <input class="hide-radio" type="radio" name="attr_survival"  checked><input
-                        type="radio" name="attr_survival" value="10"><input type="radio" name="attr_survival"
-                        value="20"><input type="radio" name="attr_survival" value="30">
+                    <span class="skill">Survival</span> <input class="hide-radio" type="radio" name="attr_survival" value="0"
+                        checked><input type="radio" name="attr_survival" value="10"><input type="radio"
+                        name="attr_survival" value="20"><input type="radio" name="attr_survival" value="30">
                 </div>
                 <div class="skill-unlock">
                     <input type="checkbox" name="attr_awareness_unlock">
@@ -112,27 +116,28 @@
             <div class="skill-group">
                 <div class="skill-group-ability">Intelligence</div>
                 <div class="skill-grid">
-                    <span class="skill">Education</span> <input class="hide-radio" type="radio" name="attr_education"  checked><input
-                        type="radio" name="attr_education" value="10"><input type="radio" name="attr_education"
-                        value="20"><input type="radio" name="attr_education" value="30">
-                    <span class="skill">Folklore</span> <input class="hide-radio" type="radio" name="attr_folklore"  checked><input
-                        type="radio" name="attr_folklore" value="10"><input type="radio" name="attr_folklore"
-                        value="20"><input type="radio" name="attr_folklore" value="30">
-                    <span class="skill">Gamble</span> <input class="hide-radio" type="radio" name="attr_gamble"  checked><input
-                        type="radio" name="attr_gamble" value="10"><input type="radio" name="attr_gamble"
+                    <span class="skill">Education</span> <input class="hide-radio" type="radio" name="attr_education" value="0"
+                        checked><input type="radio" name="attr_education" value="10"><input type="radio"
+                        name="attr_education" value="20"><input type="radio" name="attr_education" value="30">
+                    <span class="skill">Folklore</span> <input class="hide-radio" type="radio" name="attr_folklore" value="0"
+                        checked><input type="radio" name="attr_folklore" value="10"><input type="radio"
+                        name="attr_folklore" value="20"><input type="radio" name="attr_folklore" value="30">
+                    <span class="skill">Gamble</span> <input class="hide-radio" type="radio" name="attr_gamble" value="0"
+                        checked><input type="radio" name="attr_gamble" value="10"><input type="radio" name="attr_gamble"
                         value="20"><input type="radio" name="attr_gamble" value="30">
-                    <span class="skill">Heal</span> <input class="hide-radio" type="radio" name="attr_heal"  checked><input
-                        type="radio" name="attr_heal" value="10"><input type="radio" name="attr_heal" value="20"><input
-                        type="radio" name="attr_heal" value="30">
-                    <span class="skill">Navigation</span> <input class="hide-radio" type="radio" name="attr_navigation" 
+                    <span class="skill">Heal</span> <input class="hide-radio" type="radio" name="attr_heal" value="0"
+                        checked><input type="radio" name="attr_heal" value="10"><input type="radio" name="attr_heal"
+                        value="20"><input type="radio" name="attr_heal" value="30">
+                    <span class="skill">Navigation</span> <input class="hide-radio" type="radio" name="attr_navigation" value="0"
                         checked><input type="radio" name="attr_navigation" value="10"><input type="radio"
                         name="attr_navigation" value="20"><input type="radio" name="attr_navigation" value="30">
-                    <span class="skill">Strategy</span> <input class="hide-radio" type="radio" name="attr_strategy"  checked><input
-                        type="radio" name="attr_strategy" value="10"><input type="radio" name="attr_strategy"
-                        value="20"><input type="radio" name="attr_strategy" value="30">
-                    <span class="skill">Wortcunning</span> <input class="hide-radio" type="radio" name="attr_wortcunning" 
-                        checked><input type="radio" name="attr_wortcunning" value="10"><input type="radio"
-                        name="attr_wortcunning" value="20"><input type="radio" name="attr_wortcunning" value="30">
+                    <span class="skill">Strategy</span> <input class="hide-radio" type="radio" name="attr_strategy" value="0"
+                        checked><input type="radio" name="attr_strategy" value="10"><input type="radio"
+                        name="attr_strategy" value="20"><input type="radio" name="attr_strategy" value="30">
+                    <span class="skill">Wortcunning</span> <input class="hide-radio" type="radio" value="0"
+                        name="attr_wortcunning" checked><input type="radio" name="attr_wortcunning" value="10"><input
+                        type="radio" name="attr_wortcunning" value="20"><input type="radio" name="attr_wortcunning"
+                        value="30">
                 </div>
                 <div class="skill-unlock">
                     <input type="checkbox" name="attr_education_unlock">
@@ -147,13 +152,13 @@
             <div class="skill-group">
                 <div class="skill-group-ability">Willpower</div>
                 <div class="skill-grid">
-                    <span class="skill">Odweft</span> <input class="hide-radio" type="radio" name="attr_odweft"  checked><input
-                        type="radio" name="attr_odweft" value="10"><input type="radio" name="attr_odweft"
+                    <span class="skill">Odweft</span> <input class="hide-radio" type="radio" name="attr_odweft" value="0"
+                        checked><input type="radio" name="attr_odweft" value="10"><input type="radio" name="attr_odweft"
                         value="20"><input type="radio" name="attr_odweft" value="30">
-                    <span class="skill">Resolve</span> <input class="hide-radio" type="radio" name="attr_resolve"  checked><input
-                        type="radio" name="attr_resolve" value="10"><input type="radio" name="attr_resolve"
-                        value="20"><input type="radio" name="attr_resolve" value="30">
-                    <span class="skill">Tradecraft</span> <input class="hide-radio" type="radio" name="attr_tradecraft" 
+                    <span class="skill">Resolve</span> <input class="hide-radio" type="radio" name="attr_resolve" value="0"
+                        checked><input type="radio" name="attr_resolve" value="10"><input type="radio"
+                        name="attr_resolve" value="20"><input type="radio" name="attr_resolve" value="30">
+                    <span class="skill">Tradecraft</span> <input class="hide-radio" type="radio" name="attr_tradecraft" value="0"
                         checked><input type="radio" name="attr_tradecraft" value="10"><input type="radio"
                         name="attr_tradecraft" value="20"><input type="radio" name="attr_tradecraft" value="30">
                 </div>
@@ -166,26 +171,27 @@
             <div class="skill-group">
                 <div class="skill-group-ability">Fellowship</div>
                 <div class="skill-grid">
-                    <span class="skill">Bargain</span> <input class="hide-radio" type="radio" name="attr_bargain"  checked><input
-                        type="radio" name="attr_bargain" value="10"><input type="radio" name="attr_bargain"
-                        value="20"><input type="radio" name="attr_bargain" value="30">
-                    <span class="skill">Charm</span> <input class="hide-radio" type="radio" name="attr_charm"  checked><input
-                        type="radio" name="attr_charm" value="10"><input type="radio" name="attr_charm"
+                    <span class="skill">Bargain</span> <input class="hide-radio" type="radio" name="attr_bargain" value="0"
+                        checked><input type="radio" name="attr_bargain" value="10"><input type="radio"
+                        name="attr_bargain" value="20"><input type="radio" name="attr_bargain" value="30">
+                    <span class="skill">Charm</span> <input class="hide-radio" type="radio" name="attr_charm" value="0"
+                        checked><input type="radio" name="attr_charm" value="10"><input type="radio" name="attr_charm"
                         value="20"><input type="radio" name="attr_charm" value="30">
-                    <span class="skill">Disguise</span> <input class="hide-radio" type="radio" name="attr_disguise"  checked><input
-                        type="radio" name="attr_disguise" value="10"><input type="radio" name="attr_disguise"
-                        value="20"><input type="radio" name="attr_disguise" value="30">
-                    <span class="skill">Guile</span> <input class="hide-radio" type="radio" name="attr_guile"  checked><input
-                        type="radio" name="attr_guile" value="10"><input type="radio" name="attr_guile"
+                    <span class="skill">Disguise</span> <input class="hide-radio" type="radio" name="attr_disguise" value="0"
+                        checked><input type="radio" name="attr_disguise" value="10"><input type="radio"
+                        name="attr_disguise" value="20"><input type="radio" name="attr_disguise" value="30">
+                    <span class="skill">Guile</span> <input class="hide-radio" type="radio" name="attr_guile" value="0"
+                        checked><input type="radio" name="attr_guile" value="10"><input type="radio" name="attr_guile"
                         value="20"><input type="radio" name="attr_guile" value="30">
-                    <span class="skill">Handle Animal</span> <input class="hide-radio" type="radio" name="attr_handleanimal" 
-                        checked><input type="radio" name="attr_handleanimal" value="10"><input type="radio"
-                        name="attr_handleanimal" value="20"><input type="radio" name="attr_handleanimal" value="30">
-                    <span class="skill">Leadership</span> <input class="hide-radio" type="radio" name="attr_leadership" 
+                    <span class="skill">Handle Animal</span> <input class="hide-radio" type="radio" value="0"
+                        name="attr_handleanimal" checked><input type="radio" name="attr_handleanimal" value="10"><input
+                        type="radio" name="attr_handleanimal" value="20"><input type="radio" name="attr_handleanimal"
+                        value="30">
+                    <span class="skill">Leadership</span> <input class="hide-radio" type="radio" name="attr_leadership" value="0"
                         checked><input type="radio" name="attr_leadership" value="10"><input type="radio"
                         name="attr_leadership" value="20"><input type="radio" name="attr_leadership" value="30">
-                    <span class="skill">Rumor</span> <input class="hide-radio" type="radio" name="attr_rumor"  checked><input
-                        type="radio" name="attr_rumor" value="10"><input type="radio" name="attr_rumor"
+                    <span class="skill">Rumor</span> <input class="hide-radio" type="radio" name="attr_rumor" value="0"
+                        checked><input type="radio" name="attr_rumor" value="10"><input type="radio" name="attr_rumor"
                         value="20"><input type="radio" name="attr_rumor" value="30">
                 </div>
                 <div class="skill-unlock">
@@ -202,11 +208,19 @@
         <div class="boons-banes-block border">booh</div>
         <div class="alignment-block border">
             <div class="header">Alignment</div>
+            <div class="sub-header">
+                <span>Harmonic resonance</span>
+                <span>Discordant resonance</span>
+            </div>
+            <div class="resonance-container">
+                <input class="resonance" type="text" name="attr_harmonicresonance">
+                <input class="resonance" type="text" name="attr_discordantresonance">
+            </div>
             <div class="alignment-grid">
-                <div class="ho1 horizontal-line"></div>
-                <div class="ho2 horizontal-line"></div>
-                <div class="ho3 horizontal-line"></div>
-                <div class="ho4 horizontal-line"></div>
+                <div class="ho1 horizontal-line t-line"></div>
+                <div class="ho2 horizontal-line t-line"></div>
+                <div class="ho3 horizontal-line t-line"></div>
+                <div class="ho4 horizontal-line t-line"></div>
                 <div class="ho5 horizontal-line"></div>
                 <div class="ho6 horizontal-line"></div>
                 <div class="ho7 horizontal-line"></div>
@@ -238,95 +252,99 @@
                 <div class="ve20 vertical-line"></div>
                 <div class="ve21 vertical-line"></div>
                 <div class="ve22 vertical-line"></div>
-                <div class="ha1 align-box">
+                <label class="ha1 align-box">
                     1
                     <input type="radio" name="attr_alignment" value="1" checked>
-                </div>
-                <div class="ha2 align-box">
+                </label>
+                <label class="ha2 align-box">
                     2
                     <input type="radio" name="attr_alignment" value="2">
-                </div>
-                <div class="ha3 align-box">
+                </label>
+                <label class="ha3 align-box left-num">
                     3
                     <input type="radio" name="attr_alignment" value="3">
-                </div>
-                <div class="ha4 align-box">
+                </label>
+                <label class="ha4 align-box left-num">
                     4
                     <input type="radio" name="attr_alignment" value="4">
-                </div>
-                <div class="ha5 align-box">
+                </label>
+                <label class="ha5 align-box left-num">
                     5
                     <input type="radio" name="attr_alignment" value="5">
-                </div>
-                <div class="ha6 align-box">
+                </label>
+                <label class="ha6 align-box left-num">
                     6
                     <input type="radio" name="attr_alignment" value="6">
-                </div>
-                <div class="ha7 align-box">
+                </label>
+                <label class="ha7 align-box left-num">
                     7
                     <input type="radio" name="attr_alignment" value="7">
-                </div>
-                <div class="ha8 align-box">
+                </label>
+                <label class="ha8 align-box left-num">
                     8
                     <input type="radio" name="attr_alignment" value="8">
-                </div>
-                <div class="ha9 align-box">
+                </label>
+                <label class="ha9 align-box left-num">
                     9
                     <input type="radio" name="attr_alignment" value="9">
-                </div>
-                <div class="ha10 align-box">
+                </label>
+                <label class="ha10 align-box left-num">
                     10
                     <input type="radio" name="attr_alignment" value="10">
-                </div>
-                <div class="ha0 align-box">
+                </label>
+                <label class="ha0 align-box">
                     0
                     <input type="radio" name="attr_alignment" value="0" checked>
-                </div>
-                <div class="di1 align-box">
+                </label>
+                <label class="di1 align-box">
                     1
                     <input type="radio" name="attr_alignment" value="-1">
-                </div>
-                <div class="di2 align-box">
+                </label>
+                <label class="di2 align-box">
                     2
                     <input type="radio" name="attr_alignment" value="-2">
-                </div>
-                <div class="di3 align-box">
+                </label>
+                <label class="di3 align-box right-num">
                     3
                     <input type="radio" name="attr_alignment" value="-3">
-                </div>
-                <div class="di4 align-box">
+                </label>
+                <label class="di4 align-box right-num">
                     4
                     <input type="radio" name="attr_alignment" value="-4">
-                </div>
-                <div class="di5 align-box">
+                </label>
+                <label class="di5 align-box right-num">
                     5
                     <input type="radio" name="attr_alignment" value="-5">
-                </div>
-                <div class="di6 align-box">
+                </label>
+                <label class="di6 align-box right-num">
                     6
                     <input type="radio" name="attr_alignment" value="-6">
-                </div>
-                <div class="di7 align-box">
+                </label>
+                <label class="di7 align-box right-num">
                     7
                     <input type="radio" name="attr_alignment" value="-7">
-                </div>
-                <div class="di8 align-box">
+                </label>
+                <label class="di8 align-box right-num">
                     8
                     <input type="radio" name="attr_alignment" value="-8">
-                </div>
-                <div class="di9 align-box">
+                </label>
+                <label class="di9 align-box right-num">
                     9
                     <input type="radio" name="attr_alignment" value="-9">
-                </div>
-                <div class="di10 align-box">
+                </label>
+                <label class="di10 align-box right-num">
                     10
                     <input type="radio" name="attr_alignment" value="-10">
-                </div>
-                <div class="revelation3">Revelation</div>
-                <div class="revelation5">Revelation</div>
-                <div class="revelation7">Revelation</div>
-                <div class="revelation9">Revelation</div>
-                <div class="revelation10">Revelation</div>
+                </label>
+                <div class="revelation3 rev">Revelation</div>
+                <div class="revelation5 rev">Revelation</div>
+                <div class="revelation7 rev">Revelation</div>
+                <div class="revelation9 rev">Revelation</div>
+                <div class="revelation10 rev">Revelation</div>
+            </div>
+            <div class="flex-row">
+                <div class="harmony"><input type="number" name="attr_harmony"></div>
+                <div class="discord"><input type="number" name="attr_discord"></div>
             </div>
         </div>
         <div class="languages-block border"> biii</div>

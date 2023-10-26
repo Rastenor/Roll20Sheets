@@ -23,7 +23,6 @@
     flex-direction: row;
     justify-content: center;
     text-align: center;
-    margin: auto;
     background-color: var(--mid);
 }
 
@@ -119,6 +118,8 @@
 }
 .alignment-block{
     grid-area: align;
+    display: flex;
+    flex-direction: column;
 }
 
 .align-box{
@@ -126,6 +127,41 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+.sub-header{
+    display: flex;
+    background-color:var(--dark);
+    color:white;
+    padding: 1rem;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.resonance-container{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid var(--dark);
+}
+
+.ui-dialog .charsheet .resonance-container input{
+    width: 50%;
+    text-align: center;
+}
+.ui-dialog .charsheet .harmony input{
+    width: 100%;
+    margin: auto;
+    height: 5rem;
+    text-align: center;
+}
+.ui-dialog .charsheet .discord input{
+    width: 100%;
+    margin: auto;
+    height: 5rem;
+    text-align: center;
 }
 
 /*#region alignment-grid*/
@@ -319,16 +355,38 @@
 }
 /*#endregion*/
 
+.rev{
+    text-align: center;
+}
+
 .horizontal-line{
     border-top: 1px solid var(--dark);
     width: 100%;
-    margin: 0;
+    margin-top: 22%;
 }
 .vertical-line{
     border-left: 1px solid var(--dark);
     height: 100%;
     min-height: 1rem;
-    margin: 0;
+    margin-left: 50%;
+}
+
+.t-line{
+    margin-top: auto;
+    margin-bottom: 25%;
+}
+
+.left-num{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 25%;
+}
+.right-num{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin-left: 25%;
 }
 
 /* accidentaly skipped ve11
@@ -336,6 +394,7 @@
 
 .alignment-grid{
     display: grid;
+    grid-template-columns: repeat(9, 1fr);
     grid-template-areas: 
     "ha2 ho1 ha1 ho2 ha0 ho3 di1 ho4 di2"
     "ve1 . . . ve2 . . . ve3"
@@ -354,11 +413,21 @@
     "ha9 ho11 ho11 r9 r9 r9 ho12 ho12 di9"
     "ve20 . . . ve21 . . . ve22"
     "ha10 ho13 ho13 r10 r10 r10 ho14 ho14 di10";
-    align-items: center;
-    justify-items: center;
     padding: 2rem;
-    gap: 1px;
+    gap: 0.3rem;
+    margin-bottom: auto;
+    margin-top: auto;
 }
+
+.charsheet .alignment-grid label
+{
+    margin-bottom: 0px;
+    display: flex;
+    padding-right: 0px;
+    text-align: center;
+    flex-direction: column;
+}
+
 /*#endregion*/
 .skills-block{
     grid-area: skills;
