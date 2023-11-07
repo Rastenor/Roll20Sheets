@@ -4,18 +4,42 @@
     color:var(--dark);
 }
 
+.largedialog textarea {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    max-height: 100%;
+    height: -webkit-fill-available;
+    resize: none;
+    margin: 0;
+    padding: 5px;
+}
+
 .fate-coin-block{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    height:100%
 }
-
-.fate-spent{
+.fate-coin-block>label{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
+    height:100%;
+    border-top: 1px solid var(--dark);
+    padding:0;
+}
+.fate-coin-block :last-child{
+    border-left: 1px solid var(--dark);
+}
+
+.border input[type="text"]{
+    width: 100%;
+    padding: 1rem;
+    margin: 0;
+    height: 100%;
 }
 
 .header{
@@ -31,11 +55,14 @@
     min-height: 50px;
 }
 
+.height100{
+    height: 100%;
+}
+
 .grid{
     margin: 3rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
     grid-template-areas: 
     "fate title concept"
     "prim name skills"
@@ -44,6 +71,11 @@
     "prim align skills"
     "lang align skills"
     "diff diff diff";
+}
+.grid > * {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
 }
 
 .skill-sub-header{
@@ -72,13 +104,16 @@
     border-right: 1px solid var(--dark);
     padding-right: 1rem;
     column-gap: 1px;
+    align-items: center;
 }
 
 .skill-group{
     display: flex;
     flex-direction:row;
     border: 1px solid var(--dark);
+    height: -webkit-fill-available;
     padding: 1rem 0rem 1rem 0rem;
+    align-items: stretch;
 }
 .hide-radio {
     opacity: 5%;
@@ -107,6 +142,38 @@
 .primary-attributes-block{
     grid-area: prim;
 }
+.attribute-name>h2{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 1.5rem;
+    writing-mode: vertical-lr;
+}
+.attribute-container{
+    display: grid;
+    grid-template-columns: 8fr 8fr 1fr;
+    align-items: center;
+    border-top: 1px solid var(--dark);
+    padding:0 1rem 0 1rem;
+}
+
+.attribute-value-container{
+    display: flex;
+    flex-direction: column;
+    padding:1rem;
+}
+.attribute-value{
+    display: flex;
+}
+.attribute-value>label{
+    display: flex;
+    flex-direction: column;
+}
+.bonus-advancement-container{
+    display: flex;
+    flex-direction: column;
+}
+
 .name-block{
     grid-area: name;
 }
@@ -115,7 +182,17 @@
 }
 .boons-banes-block{
     grid-area: boons;
+    display: flex;
+    flex-direction: column;
 }
+.boons-banes-block>*>label{
+    display: flex;
+    padding-right: 0px;
+    margin: 0px;
+    flex-direction: column;
+    text-align: center;
+}
+
 .alignment-block{
     grid-area: align;
     display: flex;

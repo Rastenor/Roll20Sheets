@@ -4,11 +4,11 @@
             <div class="header"><span style="margin-left: 0; margin-right: auto;">Accessible?<input type="checkbox"
                         name="attr_fateacc" id=""></span><span>Fate</span></div>
             <div class="fate-coin-block">
-                <label class="fate-spent border">
+                <label class="fate-spent">
                     <input type="radio" name="attr_fatespent" value="spendable" id="0">
                     Spendable
                 </label>
-                <label class="fate-spent border">
+                <label class="fate-spent">
                     <input type="radio" name="attr_fatespent" value="spent" id="1">
                     Spent
                 </label>
@@ -17,10 +17,242 @@
         <div class="title-block">
             <h1>Blackbirds</h1>
         </div>
-        <div class="name-block border"></div>
-        <div class="concept-block border"></div>
-        <div class="primary-attributes-block border"></div>
-        <div class="ancestry-block border"></div>
+        <div class="name-block border">
+            <div class="header">Character name</div>
+            <input type="text" name="attr_character_name"></textarea>
+        </div>
+        <div class="concept-block border">
+            <div class="header">Concept</div>
+            <textarea name="attr_concept"></textarea>
+        </div>
+        <div class="primary-attributes-block border">
+            <div class="header">Primary Attributes</div>
+            <div class="attribute-container">
+                <div class="attribute-name">
+                    <h2>Combat</h2>
+                </div>
+                <div class="attribute-value-container">
+                    <div class="attribute-value">
+                        <label>Value:
+                            <input type="number" name="attr_combat" value="0">
+                        </label>
+                        <label>+mod: <input type="number" name="attr_combat-mod" value="0">
+                        </label>
+                    </div>
+                    <div class="attribute-value">
+                        <label>CB:
+                            <input type="number" name="attr_combat_bonus" value="0">
+                        </label>
+                        <label>+mod:
+                            <input type="number" name="attr_combat_bonus_mod" value="0">
+                        </label>
+                    </div>
+                </div>
+                <div class="bonus-advancement-container">
+                    <input class="hide-radio" type="radio" name="attr_combat_advancement" value="0">
+                    <input type="radio" name="attr_combat_advancement" value="1">
+                    <input type="radio" name="attr_combat_advancement" value="2">
+                    <input type="radio" name="attr_combat_advancement" value="3">
+                    <input type="radio" name="attr_combat_advancement" value="4">
+                    <input type="radio" name="attr_combat_advancement" value="5">
+                    <input type="radio" name="attr_combat_advancement" value="6">
+                </div>
+
+            </div>
+            <div class="attribute-container">
+                <div class="attribute-name">
+                    <h2>Brawn</h2>
+                </div>
+                <div class="attribute-value-container">
+                    <div class="attribute-value">
+                        <label>Value:
+                            <input type="number" name="attr_brawn" value="0">
+                        </label>
+                        <label>+mod: <input type="number" name="attr_brawn-mod" value="0">
+                        </label>
+                    </div>
+                    <div class="attribute-value">
+                        <label>BB:
+                            <input type="number" name="attr_brawn_bonus" value="0">
+                        </label>
+                        <label>+mod:
+                            <input type="number" name="attr_brawn_bonus_mod" value="0">
+                        </label>
+                    </div>
+                </div>
+                <div class="bonus-advancement-container">
+                    <input class="hide-radio" type="radio" name="attr_brawn_advancement" value="0">
+                    <input type="radio" name="attr_brawn_advancement" value="1">
+                    <input type="radio" name="attr_brawn_advancement" value="2">
+                    <input type="radio" name="attr_brawn_advancement" value="3">
+                    <input type="radio" name="attr_brawn_advancement" value="4">
+                    <input type="radio" name="attr_brawn_advancement" value="5">
+                    <input type="radio" name="attr_brawn_advancement" value="6">
+                </div>
+            </div>
+            <div class="attribute-container">
+                <div class="attribute-name">
+                    <h2>Agiliy</h2>
+                </div>
+                <div class="attribute-value-container">
+                    <div class="attribute-value">
+                        <label>Value:
+                            <input type="number" name="attr_agility" value="0">
+                        </label>
+                        <label>+mod: <input type="number" name="attr_agility-mod" value="0">
+                        </label>
+                    </div>
+                    <div class="attribute-value">
+                        <label>AB:
+                            <input type="number" name="attr_agility_bonus" value="0">
+                        </label>
+                        <label>+mod:
+                            <input type="number" name="attr_agility_bonus_mod" value="0">
+                        </label>
+                    </div>
+                </div>
+                <div class="bonus-advancement-container">
+                    <input class="hide-radio" type="radio" name="attr_agility_advancement" value="0">
+                    <input type="radio" name="attr_agility_advancement" value="1">
+                    <input type="radio" name="attr_agility_advancement" value="2">
+                    <input type="radio" name="attr_agility_advancement" value="3">
+                    <input type="radio" name="attr_agility_advancement" value="4">
+                    <input type="radio" name="attr_agility_advancement" value="5">
+                    <input type="radio" name="attr_agility_advancement" value="6">
+                </div>
+            </div>
+
+            <div class="attribute-container">
+                <div class="attribute-name">
+                    <h2>Perception</h2>
+                </div>
+                <div class="attribute-value-container">
+                    <div class="attribute-value">
+                        <label>Value:
+                            <input type="number" name="attr_perception" value="0">
+                        </label>
+                        <label>+mod: <input type="number" name="attr_perception-mod" value="0">
+                        </label>
+                    </div>
+                    <div class="attribute-value">
+                        <label>PB:
+                            <input type="number" name="attr_perception_bonus" value="0">
+                        </label>
+                        <label>+mod:
+                            <input type="number" name="attr_perception_bonus_mod" value="0">
+                        </label>
+                    </div>
+                </div>
+                <div class="bonus-advancement-container">
+                    <input class="hide-radio" type="radio" name="attr_perception_advancement" value="0">
+                    <input type="radio" name="attr_perception_advancement" value="1">
+                    <input type="radio" name="attr_perception_advancement" value="2">
+                    <input type="radio" name="attr_perception_advancement" value="3">
+                    <input type="radio" name="attr_perception_advancement" value="4">
+                    <input type="radio" name="attr_perception_advancement" value="5">
+                    <input type="radio" name="attr_perception_advancement" value="6">
+                </div>
+            </div>
+            <div class="attribute-container">
+                <div class="attribute-name">
+                    <h2>Intelligence</h2>
+                </div>
+                <div class="attribute-value-container">
+                    <div class="attribute-value">
+                        <label>Value:
+                            <input type="number" name="attr_intelligence" value="0">
+                        </label>
+                        <label>+mod: <input type="number" name="attr_intelligence-mod" value="0">
+                        </label>
+                    </div>
+                    <div class="attribute-value">
+                        <label>IB:
+                            <input type="number" name="attr_intelligence_bonus" value="0">
+                        </label>
+                        <label>+mod:
+                            <input type="number" name="attr_intelligence_bonus_mod" value="0">
+                        </label>
+                    </div>
+                </div>
+                <div class="bonus-advancement-container">
+                    <input class="hide-radio" type="radio" name="attr_intelligence_advancement" value="0">
+                    <input type="radio" name="attr_intelligence_advancement" value="1">
+                    <input type="radio" name="attr_intelligence_advancement" value="2">
+                    <input type="radio" name="attr_intelligence_advancement" value="3">
+                    <input type="radio" name="attr_intelligence_advancement" value="4">
+                    <input type="radio" name="attr_intelligence_advancement" value="5">
+                    <input type="radio" name="attr_intelligence_advancement" value="6">
+                </div>
+            </div>
+            <div class="attribute-container">
+                <div class="attribute-name">
+                    <h2>Willpower</h2>
+                </div>
+                <div class="attribute-value-container">
+                    <div class="attribute-value">
+                        <label>Value:
+                            <input type="number" name="attr_willpower" value="0">
+                        </label>
+                        <label>+mod: <input type="number" name="attr_willpower-mod" value="0">
+                        </label>
+                    </div>
+                    <div class="attribute-value">
+                        <label>WB:
+                            <input type="number" name="attr_willpower_bonus" value="0">
+                        </label>
+                        <label>+mod:
+                            <input type="number" name="attr_willpower_bonus_mod" value="0">
+                        </label>
+                    </div>
+                </div>
+                <div class="bonus-advancement-container">
+                    <input class="hide-radio" type="radio" name="attr_willpower_advancement" value="0">
+                    <input type="radio" name="attr_willpower_advancement" value="1">
+                    <input type="radio" name="attr_willpower_advancement" value="2">
+                    <input type="radio" name="attr_willpower_advancement" value="3">
+                    <input type="radio" name="attr_willpower_advancement" value="4">
+                    <input type="radio" name="attr_willpower_advancement" value="5">
+                    <input type="radio" name="attr_willpower_advancement" value="6">
+                </div>
+
+            </div>
+            <div class="attribute-container">
+                <div class="attribute-name">
+                    <h2>Fellowship</h2>
+                </div>
+                <div class="attribute-value-container">
+                    <div class="attribute-value">
+                        <label>Value:
+                            <input type="number" name="attr_fellowship" value="0">
+                        </label>
+                        <label>+mod: <input type="number" name="attr_fellowship-mod" value="0">
+                        </label>
+                    </div>
+                    <div class="attribute-value">
+                        <label>FB:
+                            <input type="number" name="attr_fellowship_bonus" value="0">
+                        </label>
+                        <label>+mod:
+                            <input type="number" name="attr_fellowship_bonus_mod" value="0">
+                        </label>
+                    </div>
+                </div>
+                <div class="bonus-advancement-container">
+                    <input class="hide-radio" type="radio" name="attr_fellowship_advancement" value="0">
+                    <input type="radio" name="attr_fellowship_advancement" value="1">
+                    <input type="radio" name="attr_fellowship_advancement" value="2">
+                    <input type="radio" name="attr_fellowship_advancement" value="3">
+                    <input type="radio" name="attr_fellowship_advancement" value="4">
+                    <input type="radio" name="attr_fellowship_advancement" value="5">
+                    <input type="radio" name="attr_fellowship_advancement" value="6">
+                </div>
+
+            </div>
+        </div>
+        <div class="ancestry-block border">
+            <div class="header">Ancestry</div>
+            <input type="text" name="attr_ancestry"></input>
+        </div>
         <div class="skills-block border">
             <div class="header">Skills</div>
             <div class="skill-sub-header">
@@ -93,17 +325,17 @@
             <div class="skill-group">
                 <div class="skill-group-ability">Perception</div>
                 <div class="skill-grid">
-                    <span class="skill">Awareness</span> <input class="hide-radio" type="radio" name="attr_awareness" value="0"
-                        checked><input type="radio" name="attr_awareness" value="10"><input type="radio"
+                    <span class="skill">Awareness</span> <input class="hide-radio" type="radio" name="attr_awareness"
+                        value="0" checked><input type="radio" name="attr_awareness" value="10"><input type="radio"
                         name="attr_awareness" value="20"><input type="radio" name="attr_awareness" value="30">
-                    <span class="skill">Eavesdrop</span> <input class="hide-radio" type="radio" name="attr_eavesdrop" value="0"
-                        checked><input type="radio" name="attr_eavesdrop" value="10"><input type="radio"
+                    <span class="skill">Eavesdrop</span> <input class="hide-radio" type="radio" name="attr_eavesdrop"
+                        value="0" checked><input type="radio" name="attr_eavesdrop" value="10"><input type="radio"
                         name="attr_eavesdrop" value="20"><input type="radio" name="attr_eavesdrop" value="30">
-                    <span class="skill">Scrutinize</span> <input class="hide-radio" type="radio" name="attr_scrutinize" value="0"
-                        checked><input type="radio" name="attr_scrutinize" value="10"><input type="radio"
+                    <span class="skill">Scrutinize</span> <input class="hide-radio" type="radio" name="attr_scrutinize"
+                        value="0" checked><input type="radio" name="attr_scrutinize" value="10"><input type="radio"
                         name="attr_scrutinize" value="20"><input type="radio" name="attr_scrutinize" value="30">
-                    <span class="skill">Survival</span> <input class="hide-radio" type="radio" name="attr_survival" value="0"
-                        checked><input type="radio" name="attr_survival" value="10"><input type="radio"
+                    <span class="skill">Survival</span> <input class="hide-radio" type="radio" name="attr_survival"
+                        value="0" checked><input type="radio" name="attr_survival" value="10"><input type="radio"
                         name="attr_survival" value="20"><input type="radio" name="attr_survival" value="30">
                 </div>
                 <div class="skill-unlock">
@@ -116,23 +348,23 @@
             <div class="skill-group">
                 <div class="skill-group-ability">Intelligence</div>
                 <div class="skill-grid">
-                    <span class="skill">Education</span> <input class="hide-radio" type="radio" name="attr_education" value="0"
-                        checked><input type="radio" name="attr_education" value="10"><input type="radio"
+                    <span class="skill">Education</span> <input class="hide-radio" type="radio" name="attr_education"
+                        value="0" checked><input type="radio" name="attr_education" value="10"><input type="radio"
                         name="attr_education" value="20"><input type="radio" name="attr_education" value="30">
-                    <span class="skill">Folklore</span> <input class="hide-radio" type="radio" name="attr_folklore" value="0"
-                        checked><input type="radio" name="attr_folklore" value="10"><input type="radio"
+                    <span class="skill">Folklore</span> <input class="hide-radio" type="radio" name="attr_folklore"
+                        value="0" checked><input type="radio" name="attr_folklore" value="10"><input type="radio"
                         name="attr_folklore" value="20"><input type="radio" name="attr_folklore" value="30">
-                    <span class="skill">Gamble</span> <input class="hide-radio" type="radio" name="attr_gamble" value="0"
-                        checked><input type="radio" name="attr_gamble" value="10"><input type="radio" name="attr_gamble"
-                        value="20"><input type="radio" name="attr_gamble" value="30">
+                    <span class="skill">Gamble</span> <input class="hide-radio" type="radio" name="attr_gamble"
+                        value="0" checked><input type="radio" name="attr_gamble" value="10"><input type="radio"
+                        name="attr_gamble" value="20"><input type="radio" name="attr_gamble" value="30">
                     <span class="skill">Heal</span> <input class="hide-radio" type="radio" name="attr_heal" value="0"
                         checked><input type="radio" name="attr_heal" value="10"><input type="radio" name="attr_heal"
                         value="20"><input type="radio" name="attr_heal" value="30">
-                    <span class="skill">Navigation</span> <input class="hide-radio" type="radio" name="attr_navigation" value="0"
-                        checked><input type="radio" name="attr_navigation" value="10"><input type="radio"
+                    <span class="skill">Navigation</span> <input class="hide-radio" type="radio" name="attr_navigation"
+                        value="0" checked><input type="radio" name="attr_navigation" value="10"><input type="radio"
                         name="attr_navigation" value="20"><input type="radio" name="attr_navigation" value="30">
-                    <span class="skill">Strategy</span> <input class="hide-radio" type="radio" name="attr_strategy" value="0"
-                        checked><input type="radio" name="attr_strategy" value="10"><input type="radio"
+                    <span class="skill">Strategy</span> <input class="hide-radio" type="radio" name="attr_strategy"
+                        value="0" checked><input type="radio" name="attr_strategy" value="10"><input type="radio"
                         name="attr_strategy" value="20"><input type="radio" name="attr_strategy" value="30">
                     <span class="skill">Wortcunning</span> <input class="hide-radio" type="radio" value="0"
                         name="attr_wortcunning" checked><input type="radio" name="attr_wortcunning" value="10"><input
@@ -152,14 +384,14 @@
             <div class="skill-group">
                 <div class="skill-group-ability">Willpower</div>
                 <div class="skill-grid">
-                    <span class="skill">Odweft</span> <input class="hide-radio" type="radio" name="attr_odweft" value="0"
-                        checked><input type="radio" name="attr_odweft" value="10"><input type="radio" name="attr_odweft"
-                        value="20"><input type="radio" name="attr_odweft" value="30">
-                    <span class="skill">Resolve</span> <input class="hide-radio" type="radio" name="attr_resolve" value="0"
-                        checked><input type="radio" name="attr_resolve" value="10"><input type="radio"
+                    <span class="skill">Odweft</span> <input class="hide-radio" type="radio" name="attr_odweft"
+                        value="0" checked><input type="radio" name="attr_odweft" value="10"><input type="radio"
+                        name="attr_odweft" value="20"><input type="radio" name="attr_odweft" value="30">
+                    <span class="skill">Resolve</span> <input class="hide-radio" type="radio" name="attr_resolve"
+                        value="0" checked><input type="radio" name="attr_resolve" value="10"><input type="radio"
                         name="attr_resolve" value="20"><input type="radio" name="attr_resolve" value="30">
-                    <span class="skill">Tradecraft</span> <input class="hide-radio" type="radio" name="attr_tradecraft" value="0"
-                        checked><input type="radio" name="attr_tradecraft" value="10"><input type="radio"
+                    <span class="skill">Tradecraft</span> <input class="hide-radio" type="radio" name="attr_tradecraft"
+                        value="0" checked><input type="radio" name="attr_tradecraft" value="10"><input type="radio"
                         name="attr_tradecraft" value="20"><input type="radio" name="attr_tradecraft" value="30">
                 </div>
                 <div class="skill-unlock">
@@ -171,14 +403,14 @@
             <div class="skill-group">
                 <div class="skill-group-ability">Fellowship</div>
                 <div class="skill-grid">
-                    <span class="skill">Bargain</span> <input class="hide-radio" type="radio" name="attr_bargain" value="0"
-                        checked><input type="radio" name="attr_bargain" value="10"><input type="radio"
+                    <span class="skill">Bargain</span> <input class="hide-radio" type="radio" name="attr_bargain"
+                        value="0" checked><input type="radio" name="attr_bargain" value="10"><input type="radio"
                         name="attr_bargain" value="20"><input type="radio" name="attr_bargain" value="30">
                     <span class="skill">Charm</span> <input class="hide-radio" type="radio" name="attr_charm" value="0"
                         checked><input type="radio" name="attr_charm" value="10"><input type="radio" name="attr_charm"
                         value="20"><input type="radio" name="attr_charm" value="30">
-                    <span class="skill">Disguise</span> <input class="hide-radio" type="radio" name="attr_disguise" value="0"
-                        checked><input type="radio" name="attr_disguise" value="10"><input type="radio"
+                    <span class="skill">Disguise</span> <input class="hide-radio" type="radio" name="attr_disguise"
+                        value="0" checked><input type="radio" name="attr_disguise" value="10"><input type="radio"
                         name="attr_disguise" value="20"><input type="radio" name="attr_disguise" value="30">
                     <span class="skill">Guile</span> <input class="hide-radio" type="radio" name="attr_guile" value="0"
                         checked><input type="radio" name="attr_guile" value="10"><input type="radio" name="attr_guile"
@@ -187,8 +419,8 @@
                         name="attr_handleanimal" checked><input type="radio" name="attr_handleanimal" value="10"><input
                         type="radio" name="attr_handleanimal" value="20"><input type="radio" name="attr_handleanimal"
                         value="30">
-                    <span class="skill">Leadership</span> <input class="hide-radio" type="radio" name="attr_leadership" value="0"
-                        checked><input type="radio" name="attr_leadership" value="10"><input type="radio"
+                    <span class="skill">Leadership</span> <input class="hide-radio" type="radio" name="attr_leadership"
+                        value="0" checked><input type="radio" name="attr_leadership" value="10"><input type="radio"
                         name="attr_leadership" value="20"><input type="radio" name="attr_leadership" value="30">
                     <span class="skill">Rumor</span> <input class="hide-radio" type="radio" name="attr_rumor" value="0"
                         checked><input type="radio" name="attr_rumor" value="10"><input type="radio" name="attr_rumor"
@@ -205,7 +437,13 @@
                 </div>
             </div>
         </div>
-        <div class="boons-banes-block border">booh</div>
+        <div class="boons-banes-block border">
+            <div class="header">Boons and banes</div>
+            <div class="flex-row height100">
+                <label>Boons<textarea name="boons"></textarea></label>
+                <label>Banes<textarea name="banes"></textarea></label>
+            </div>
+        </div>
         <div class="alignment-block border">
             <div class="header">Alignment</div>
             <div class="sub-header">
@@ -347,7 +585,10 @@
                 <div class="discord"><input type="number" name="attr_discord"></div>
             </div>
         </div>
-        <div class="languages-block border"> biii</div>
+        <div class="languages-block border">
+            <div class="header">Languages</div>
+            <textarea name="attr_languages"> </textarea>
+        </div>
         <div class="difficulty-block border"> bleeh</div>
     </div>
 </div>
