@@ -589,6 +589,44 @@
             <div class="header">Languages</div>
             <textarea name="attr_languages"> </textarea>
         </div>
-        <div class="difficulty-block border"> bleeh</div>
+        <div class="difficulty-block border"> bleeh (difficulty chart go here)</div>
     </div>
+    <div>
+        <label>Parry <input type="number" name="attr_parry"></label>
+        <label>Dodge <input type="number" name="attr_dodge"></label>
+        <label>Initiative <input type="number" name="attr_initiative" > </label>
+        <label>Movement <input type="number" name="attr_move"></label>
+        <div class="peril-container border">
+            <label>Peril threshold <input type="number" name="attr_peril_threshold"></label>
+            <label>PT+6 <input type="number" readonly name="attr_pt6"></label>
+            <label>PT+12 <input type="number" readonly name="attr_pt12"></label>
+            <label>PT+18 <input type="number" readonly name="attr_pt18"></label>
+            <div class="peril-track">
+                <label>tier 1 <input type="checkbox" name="attr_peril_level1"></label>
+                <label>tier 2 <input type="checkbox" name="attr_peril_level2"></label>
+                <label>tier 3 <input type="checkbox" name="attr_peril_level3"></label>
+                <label>tier 4 <input type="checkbox" name="attr_peril_level4"></label>
+                <label>tier 5 <input type="checkbox" name="attr_peril_level5"></label>
+            </div>
+        </div>
+        <div class="wound-container border">
+            <label>Wound threshold <input type="number" name="attr_wound_threshold"></label>
+            <label>WT+6 <input type="number" readonly name="attr_wt6"></label>
+            <label>WT+12 <input type="number" readonly name="attr_wt12"></label>
+            <label>WT+18 <input type="number" readonly name="attr_18"></label>
+            <div class="wound-trak">
+                <label>tier 1 <input type="checkbox" name="attr_wound_level1"></label>
+                <label>tier 2 <input type="checkbox" name="attr_wound_level2"></label>
+                <label>tier 3 <input type="checkbox" name="attr_wound_level3"></label>
+                <label>tier 4 <input type="checkbox" name="attr_wound_level4"></label>
+                <label>tier 5 <input type="checkbox" name="attr_wound_level5"></label>
+            </div>
+        </div>
+        <div class="notesandgear-container">
+            <label>Gear <textarea name="attr_gear"></textarea></label>
+            <label>Notes <textarea name="attr_notes"></textarea></label>
+        </div>
+
+    </div>
+
 </div>

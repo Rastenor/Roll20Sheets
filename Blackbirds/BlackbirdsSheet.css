@@ -1,3 +1,7 @@
+.wrapper{
+    background-color: white;
+}
+
 .charsheet{
     --dark:#585858;
     --mid:#C8C8C8;
@@ -152,7 +156,7 @@
 .attribute-container{
     display: grid;
     grid-template-columns: 8fr 8fr 1fr;
-    align-items: center;
+    align-items: center; 
     border-top: 1px solid var(--dark);
     padding:0 1rem 0 1rem;
 }
