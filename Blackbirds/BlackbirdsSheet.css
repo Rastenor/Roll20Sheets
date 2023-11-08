@@ -66,7 +66,7 @@
 .grid{
     margin: 3rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 6fr 6fr 7fr;
     grid-template-areas: 
     "fate title concept"
     "prim name skills"
@@ -104,7 +104,7 @@
 
 .skill-grid{
     display: grid;
-    grid-template-columns: 7fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 20fr 1fr 1fr 1fr 1fr;
     border-right: 1px solid var(--dark);
     padding-right: 1rem;
     column-gap: 1px;
@@ -114,7 +114,7 @@
 .skill-group{
     display: flex;
     flex-direction:row;
-    border: 1px solid var(--dark);
+    border-top: 1px solid var(--dark);
     height: -webkit-fill-available;
     padding: 1rem 0rem 1rem 0rem;
     align-items: stretch;
@@ -131,6 +131,7 @@
     justify-content:space-around;
     margin-left: auto;
     margin-right: auto;
+    padding: 5px;
 }
 
 .fate-block{
@@ -518,4 +519,33 @@
 }
 .languages-block{
     grid-area: lang;
+}
+
+.the-rest{
+    margin: 3rem;
+}
+.the-rest>*{
+    margin: 1rem;
+}
+.combat-stats{
+    display: flex;
+}
+.track-container{
+    display: flex;
+    align-items: center;
+}
+.track{
+    display: flex;
+}
+.notesandgear-container{
+    display: flex;
+}
+.talentsandtechniques-container{
+    display: flex;
+}
+.talents{
+    width: 100%;
+}
+.techniques{
+    width: 100%;
 }
