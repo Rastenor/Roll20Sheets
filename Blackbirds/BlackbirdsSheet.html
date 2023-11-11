@@ -720,10 +720,10 @@
 <script type="text/worker">
     on("change:dt sheet:opened", function() {  
         getAttrs(["dt"], function(values) {
-            let dt = parseInt(values.wt)||0;
-            let dt6 = wt+6;
-            let dt12 = wt+12;
-            let dt18 = wt+18;
+            let dt = parseInt(values.dt)||0;
+            let dt6 =dt+6;
+            let dt12 = dt+12;
+            let dt18 = dt+18;
             setAttrs({                            
                 "dt6": dt6,
                 "dt12": dt12,
