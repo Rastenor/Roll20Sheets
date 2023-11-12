@@ -120,7 +120,7 @@
     align-items: stretch;
 }
 .hide-radio {
-    opacity: 50%;
+    opacity: 20%;
 }
 .hide-radio:hover{
     opacity: 100%;
@@ -519,6 +519,7 @@
 }
 .difficulty-block{
     grid-area: diff;
+    display: none;
 }
 .languages-block{
     grid-area: lang;
@@ -532,16 +533,26 @@
 }
 .combat-stats{
     display: flex;
+    gap: 1rem;
+}
+.combat-stats > .flex-row{
+    padding: 2rem;
 }
 .track-container{
     display: flex;
     align-items: center;
+    padding: 2rem;
 }
 .track{
     display: flex;
 }
 .notesandgear-container{
     display: flex;
+}
+.notesandgear-container >* textarea{
+    min-height: 15rem;
+    max-width: 40rem;
+    resize: vertical;
 }
 .talentsandtechniques-container{
     display: flex;
@@ -551,4 +562,17 @@
 }
 .techniques{
     width: 100%;
+}
+.spell-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.tithe-container{
+    padding: 2rem;
+    justify-self: center;
+}
+.repitem textarea{
+    min-height: 5rem;
+    max-width: 40rem;
+    resize: vertical;
 }
